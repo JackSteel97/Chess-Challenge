@@ -150,7 +150,7 @@ public class AutomatableController
         }
     }
     
-    public struct BotMatchStats
+    public class BotMatchStats
     {
         public string BotName;
         public int NumWins;
@@ -159,6 +159,10 @@ public class AutomatableController
         public int NumTimeouts;
         public int NumIllegalMoves;
 
+        public BotMatchStats()
+        {
+            
+        }
         public BotMatchStats(string name) => BotName = name;
 
 

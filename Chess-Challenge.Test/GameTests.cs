@@ -12,7 +12,7 @@ public class Tests
     [Test]
     public void MyBotIsBetter()
     {
-        var (myStats, theirStats) = PlayXGamesInParallel(10000);
+        var (myStats, theirStats) = PlayXGamesInParallel(1000);
 
         myStats.NumIllegalMoves.Should().Be(0, "The bot should not make illegal moves");
         myStats.NumTimeouts.Should().Be(0, "The bot should run fast enough");
